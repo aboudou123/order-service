@@ -21,7 +21,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: order-service
-          image: ghcr.io/aboudou123/order-service:sha-e1a27da
+          image: ghcr.io/aboudou123/order-service:sha-d8eba11
           ports:
             - containerPort: 3000
           env:
