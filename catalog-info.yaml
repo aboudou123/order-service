@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: order-service
+  description: Order processing microservice for the TechCorp e-commerce platform. Handles order creation, status tracking, and fulfillment integration.
+  annotations:
+    github.com/project-slug: aboudou123/order-service
+    backstage.io/techdocs-ref: dir:.
+    argocd/app-name: order-service
+    backstage.io/kubernetes-id: order-service
+    backstage.io/kubernetes-namespace: order-service
+  tags:
+    - nodejs
+    - gitops
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/developers
+  system: system:default/developer-portal
